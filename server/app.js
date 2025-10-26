@@ -11,7 +11,7 @@ const { checkCurrentUser } = require('./middleware/authMiddleware');
 const app = express();
 
 //db connection
-const dbURI = 'mongodb+srv://test:127823@test.mongodb.net/test?retryWrites=true&w=majority&appName='
+
 mongoose.connect(dbURI)
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
